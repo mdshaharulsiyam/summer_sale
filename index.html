@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale </title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+     body{
+        font-family: 'Work Sans';
+     }
+     #rating{
+        width: 10px;
+     }
+     #cart{
+        padding: 24px;
+     }
+     #cart li{
+        list-style-type:number;
+     }
+    </style>
+</head>
+<body>
+    <header class="bg-[#F9F6E2;]">
+        <div class="container mx-auto">
+        <div class=" flex flex-col-reverse md:flex-row justify-between items-center">
+            <div class="md:w-[49%]">
+                    <p class="text-center font-medium text-3xl">---SALE FEVER---</p>
+                    <h1 class="text-6xl my-12 font-bold">Purchase TK 200 or above & get <span class="text-[#E527B2]">20% off</span></h1>
+                    <p class="text-center block">Use Promo Code <span id="cuponcode" class="bg-[#E527B2] py-2 px-4 cursor-pointer rounded-lg">SELL200</span></p>   
+            </div>
+            <div class="md:w-[49%]">
+                <img src="img/Summer1.png"/>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main class="bg-[#F3f3f3] py-32">
+        <div class="container mx-auto flex flex-col lg:flex-row justify-between">
+           <div class="lg:w-2/3">
+           <div>
+            <h2 class="text-4xl font-semibold py-8">Kitchenware</h2>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="md:w-[32%] cursor-pointer w-full my-2" id="items">
+                    <div class="py-5 px-4 bg-white rounded-lg">
+                        <div class="text-center mx-auto mb-3 bg-[#F3f3f3] h-64 flex items-center rounded-lg"><img class="mx-auto" src="img/prod1.png" alt="prod1" /></div>
+                        <div class="text-center">
+                            <div class="rating rating-lg rating-half mx-auto">
+                                <input type="radio" name="rating-1" id="rating" class="rating-hidden" />
+                                <input type="radio" name="rating-1" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-1" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-1" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" checked />
+                                <input type="radio" name="rating-1" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-1" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-1" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-1" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-1" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-1" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-1" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                              </div>
+                          <h2 id="itemName" class="text-lg font-semibold text-center">K. Accessories!</h2>
+                          <p id="itemPrice" class="mx-auto text-lg"><span id="price">39.00</span> TK</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="md:w-[32%] cursor-pointer w-full my-2" id="items">
+                    <div class="py-5 px-4 bg-white rounded-lg">
+                        <div class="text-center mx-auto mb-3 bg-[#F3f3f3] h-64 flex items-center rounded-lg"><img class="mx-auto" src="img/prod2.png" alt="prod2" /></div>
+                        <div class="text-center">
+                            <div class="rating rating-lg rating-half mx-auto">
+                                <input type="radio" name="rating-2" id="rating" class="rating-hidden" />
+                                <input type="radio" name="rating-2" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-2" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-2" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" checked />
+                                <input type="radio" name="rating-2" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-2" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-2" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-2" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-2" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-2" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-2" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                              </div>
+                          <h2 id="itemName"  class="text-lg font-semibold text-center">K. Accessories!</h2>
+                          <p id="itemPrice" class="mx-auto text-lg"><span id="price">25.00</span> TK</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="md:w-[32%] cursor-pointer w-full my-2" id="items">
+                    <div class="py-5 px-4 bg-white rounded-lg">
+                        <div class="text-center mx-auto mb-3 bg-[#F3f3f3] h-64 flex items-center rounded-lg"><img class="mx-auto" src="img/prod3.png" alt="prod3" /></div>
+                        <div class="text-center">
+                            <div class="rating rating-lg rating-half mx-auto">
+                                <input type="radio" name="rating-3" id="rating" class="rating-hidden" />
+                                <input type="radio" name="rating-3" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-3" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-3" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" checked />
+                                <input type="radio" name="rating-3" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-3" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-3" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-3" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-3" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-3" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-3" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                              </div>
+                          <h2 id="itemName"  class="text-lg font-semibold text-center">Home Cooker</h2>
+                          <p id="itemPrice" class="mx-auto text-lg"><span id="price">49.00</span> TK</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+           </div>
+           <div>
+            <h2 class="text-4xl font-semibold py-8">Sportswear</h2>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="md:w-[32%] cursor-pointer w-full my-2" id="items">
+                    <div class="py-5 px-4 bg-white rounded-lg">
+                        <div class="text-center mx-auto mb-3 bg-[#F3f3f3] h-64 flex items-center rounded-lg"><img class="mx-auto" src="img/prod4.png" alt="prod4" /></div>
+                        <div class="text-center">
+                            <div class="rating rating-lg rating-half mx-auto">
+                                <input type="radio" name="rating-4" id="rating" class="rating-hidden" />
+                                <input type="radio" name="rating-4" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-4" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-4" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" checked />
+                                <input type="radio" name="rating-4" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-4" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-4" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-4" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-4" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-4" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-4" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                              </div>
+                          <h2 id="itemName"  class="text-lg font-semibold text-center">Sports Back Cap</h2>
+                          <p id="itemPrice" class="mx-auto text-lg"><span id="price">49.00</span> TK</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="md:w-[32%] cursor-pointer w-full my-2" id="items">
+                    <div class="py-5 px-4 bg-white rounded-lg">
+                        <div class="text-center mx-auto mb-3 bg-[#F3f3f3] h-64 flex items-center rounded-lg"><img class="mx-auto" src="img/prod5.png" alt="prod5" /></div>
+                        <div class="text-center">
+                            <div class="rating rating-lg rating-half mx-auto">
+                                <input type="radio" name="rating-5" id="rating" class="rating-hidden" />
+                                <input type="radio" name="rating-5" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-5" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-5" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" checked />
+                                <input type="radio" name="rating-5" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-5" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-5" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-5" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-5" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-5" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-5" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                              </div>
+                          <h2 id="itemName"  class="text-lg font-semibold text-center">Full Jersey Set</h2>
+                          <p id="itemPrice" class="mx-auto text-lg"><span id="price">69.00</span> TK</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="md:w-[32%] cursor-pointer w-full my-2" id="items">
+                    <div class="py-5 px-4 bg-white rounded-lg">
+                        <div class="text-center mx-auto mb-3 bg-[#F3f3f3] h-64 flex items-center rounded-lg"><img class="mx-auto" src="img/prod6.png" alt="prod6" /></div>
+                        <div class="text-center">
+                            <div class="rating rating-lg rating-half mx-auto">
+                                <input type="radio" name="rating-6" id="rating" class="rating-hidden" />
+                                <input type="radio" name="rating-6" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-6" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-6" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" checked />
+                                <input type="radio" name="rating-6" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-6" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-6" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-6" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-6" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-6" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-6" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                              </div>
+                          <h2 id="itemName"  class="text-lg font-semibold text-center">Sports cates</h2>
+                          <p id="itemPrice" class="mx-auto text-lg"><span id="price">159.00</span> TK</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+           </div>
+           <div>
+            <h2 class="text-4xl font-semibold py-8">Furniture</h2>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="md:w-[32%] cursor-pointer w-full my-2" id="items">
+                    <div class="py-5 px-4 bg-white rounded-lg">
+                        <div class="text-center mx-auto mb-3 bg-[#F3f3f3] h-64 flex items-center rounded-lg"><img class="mx-auto" src="img/prod7.png" alt="prod7" /></div>
+                        <div class="text-center">
+                            <div class="rating rating-lg rating-half mx-auto">
+                                <input type="radio" name="rating-7" id="rating" class="rating-hidden" />
+                                <input type="radio" name="rating-7" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-7" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-7" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" checked />
+                                <input type="radio" name="rating-7" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-7" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-7" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-7" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-7" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-7" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-7" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                              </div>
+                          <h2 id="itemName"  class="text-lg font-semibold text-center">Single Relax Chair</h2>
+                          <p id="itemPrice" class="mx-auto text-lg"><span id="price">185.00</span> TK</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="md:w-[32%] cursor-pointer w-full my-2" id="items">
+                    <div class="py-5 px-4 bg-white rounded-lg">
+                        <div class="text-center mx-auto mb-3 bg-[#F3f3f3] h-64 flex items-center rounded-lg"><img class="mx-auto" src="img/prod8.png" alt="prod8" /></div>
+                        <div class="text-center">
+                            <div class="rating rating-lg rating-half mx-auto">
+                                <input type="radio" name="rating-8" id="rating" class="rating-hidden" />
+                                <input type="radio" name="rating-8" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-8" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-8" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" checked />
+                                <input type="radio" name="rating-8" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-8" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-8" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-8" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-8" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-8" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-8" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                              </div>
+                          <h2 id="itemName"  class="text-lg font-semibold text-center">Children play</h2>
+                          <p id="itemPrice" class="mx-auto text-lg"><span id="price">299.00</span> TK</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="md:w-[32%] cursor-pointer w-full my-2" id="items">
+                    <div class="py-5 px-4 bg-white rounded-lg">
+                        <div class="text-center mx-auto mb-3 bg-[#F3f3f3] h-64 flex items-center rounded-lg"><img class="mx-auto" src="img/prod9.png" alt="prod9" /></div>
+                        <div class="text-center">
+                            <div class="rating rating-lg rating-half mx-auto">
+                                <input type="radio" name="rating-9" id="rating" class="rating-hidden" />
+                                <input type="radio" name="rating-9" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-9" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-9" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" checked />
+                                <input type="radio" name="rating-9" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-9" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-9" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-9" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-9" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                                <input type="radio" name="rating-9" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-1" />
+                                <input type="radio" name="rating-9" id="rating" class="bg-[#FBC118] mask mask-star-2 text-xs mask-half-2" />
+                              </div>
+                          <h2 id="itemName"  class="text-lg font-semibold text-center">Flexible Sofa</h2>
+                          <p id="itemPrice" class="mx-auto text-lg"><span id="price">339.00</span> TK</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+           </div>
+           </div>
+            <div class="lg:w-3/12">
+                <div class="bg-white rounded-lg mt-[106px] p-2 xl:p-6">
+                    <h2 class="text-2xl font-medium my-4">Have coupon?</h2>
+                    <div class="border border-[#DBDBDB] rounded-xl pl-2 flex justify-between"><input id="cuponinsert" class="outline-none w-40 md:pl-1 pl-3 xl:pl-3" type="text" placeholder="Coupon code"><button id="coupon" disabled class="px-6 py-4 lg:py-2 lg:px-3 xl:px-6 xl:py-4 bg-[#CBCCCF] rounded-r-lg text-white text-xl font-semibold">Apply</button></div>
+                </div>
+                <div class="bg-white my-7 rounded-s-xl p-6">
+                    <ul id="cart" class="text-2xl font-medium">
+                    </ul>
+                    <p class="text-2xl font-medium">Total price:<span class="text-[#888888] mx-2" id="totalPrice">00</span>TK</p>
+                    <p class="text-2xl font-medium">Discount:<span class="text-[#888888] mx-2" id="discountPrice">00</span>TK</p>
+                    <p class="text-2xl font-medium">Total:<span class="text-[#888888] mx-2" id="totalPriceAfterDiscount"> 00</span>TK</p>
+                </div>
+                <!-- Open the modal using ID.showModal() method -->
+                <button disabled id="PurchaseBtn" class="btn text-white text-xl font-medium -mt-12 px-14 mx-auto block bg-[#E969B2]" onclick="my_modal_1.showModal()">Make Purchase</button>
+                <dialog id="my_modal_1" class="modal">
+                <form method="dialog" class="modal-box">
+                    <div class="text-center">
+                        <img src="img/congo.png" alt="congo" class="mx-auto">
+                        <h3 class="font-bold text-5xl">Congratulations!</h3>
+                        <p class="py-4 text-xl">Your Purchase the product</p>
+                    </div>
+                    <div class="modal-action ">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button id="gohome" class="btn mx-auto py-4 px-11 bg-[#E969B2] text-white">Go Home</button>
+                    </div>
+                </form>
+                </dialog>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
